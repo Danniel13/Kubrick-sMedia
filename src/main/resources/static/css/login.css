@@ -1,0 +1,86 @@
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+  .ml-auto,
+  .mx-auto {
+    margin-left: auto !important;
+  }
+
+
+
+  .table .thead-dark th {
+    color: inherit;
+    border-color: #dee2e6;
+  }
+
+
+
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+  color: #397183;
+}
+
+a:hover,
+a:focus {
+ 
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+
+
+.form-control {
+  background: transparent;
+  border: none;
+  height: 50px;
+  color: white !important;
+  border: 1px solid transparent;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+#bodyd{
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+#buttone {
+  padding: .375rem .75rem;
+  border-radius: .30rem;
+  background-color: #53A6C1;
+  color: #fff;
+  transition: background-color .15s ease-in-out;
+  border-color: #397183;
+}
+
+
+
+#buttone:hover {
+  background-color: #397183;
+}
+
+#buttone:active {
+  background-color: #397183;
+}
+
+
+.boton-color:hover {
+  background: #397183;
+}
