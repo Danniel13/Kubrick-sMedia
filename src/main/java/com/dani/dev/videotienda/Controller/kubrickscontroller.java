@@ -75,13 +75,24 @@ public class kubrickscontroller {
       
 
       // Category 4:
-      new MovieDto(12, "Superbad", 4,
-      "perbad is a 2007 American coming-of-age teen buddy comedy film directed by Greg Mottola and produced by Judd Apatow. The film stars Jonah Hill and Michael Cera as Seth and Evan, two teenagers about to graduate from high school. ",
-      "1h 52m", "/img/movies/superband.jpg")
-      
-      
-      
-      
+      new MovieDto(12, "Parasite", 4,
+      "The struggling Kim family sees an opportunity when the son starts working for the wealthy Park family. Soon, all of them find a way to work within the same household and start living a parasitic life.",
+      "2h 16m", "/img/movies/parasite.jpg"),
+      new MovieDto(13, "The Shape Of Water", 4,
+      "Elisa, a lonely janitor, stumbles upon an amphibious creature that is held captive in a secret research facility. She then develops a unique relationship with the creature.",
+      "2h 03m", "/img/movies/sw.jpg"),
+
+
+
+      new MovieDto(14, "A Clockwork Orange", 5,
+      "A Clockwork Orange is a 1971 dystopian crime film  directed by Stanley Kubrick. Alex, a psychopathic delinquent, is imprisoned for murder and rape. In order to reduce his sentence, he volunteers for an experimental therapy conducted by the government.",
+      "1h 52m", "/img/movies/orange.jpg"),
+      new MovieDto(15, "Trainspotting", 5,
+      "Trainspotting is a 1996 Scottish black comedy-drama film directed by Danny Boyle. Renton is a drug addict who tries to mend his ways by moving to London and starting life afresh. He, however, is pulled back into the world of addiction by his friends.",
+      "1h 34m", "/img/movies/trains.jpg")
+
+
+
       );
 
   @GetMapping("/catalog")
