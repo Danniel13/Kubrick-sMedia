@@ -62,12 +62,27 @@ public class kubrickscontroller {
       new MovieDto(8, "Dog", 3,
           "Dog is a 2022 American comedy drama road film directed by Channing Tatum and Reid Carolin, both making their respective film directorial debuts, based on a story by Carolin and Brett Rodriguez. The film stars Tatum as an Army Ranger who is tasked with escorting the military dog of his fallen friend to his funeral.",
           "1h 37m", "/img/movies/dog.jpg"),
-      new MovieDto(8, "The Addams Family", 3,
+      new MovieDto(9, "The Addams Family", 3,
       "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
       "1h 39m", "/img/movies/adams.jpg"),
-      new MovieDto(8, "The Hangover 1", 3,
+      new MovieDto(10, "The Hangover 1", 3,
       "The plot of The Hangover was inspired by a real event that happened to Tripp Vinson, a producer and friend of executive producer Chris Bender. Vinson had gone missing from his own Las Vegas bachelor party, blacking out and waking up in a strip club being threatened with a very, very large bill I was supposed to pay ",
-      "1h 39m", "/img/movies/hangover.jpg"));
+      "1h 49m", "/img/movies/hangover.jpg"),
+
+      new MovieDto(11, "Superbad", 3,
+      "perbad is a 2007 American coming-of-age teen buddy comedy film directed by Greg Mottola and produced by Judd Apatow. The film stars Jonah Hill and Michael Cera as Seth and Evan, two teenagers about to graduate from high school. ",
+      "1h 52m", "/img/movies/superband.jpg"),
+      
+
+      // Category 4:
+      new MovieDto(12, "Superbad", 4,
+      "perbad is a 2007 American coming-of-age teen buddy comedy film directed by Greg Mottola and produced by Judd Apatow. The film stars Jonah Hill and Michael Cera as Seth and Evan, two teenagers about to graduate from high school. ",
+      "1h 52m", "/img/movies/superband.jpg")
+      
+      
+      
+      
+      );
 
   @GetMapping("/catalog")
   public String goToCatalog(Model model) { // Model es la forma como se va a enviar desde backend al html
