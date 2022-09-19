@@ -65,9 +65,9 @@ public class kubrickscontroller {
       new MovieDto(8, "The Addams Family", 3,
       "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
       "1h 39m", "/img/movies/adams.jpg"),
-      new MovieDto(8, "The Addams Family", 3,
-      "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
-      "1h 39m", "/img/movies/adams.jpg"));
+      new MovieDto(8, "The Hangover 1", 3,
+      "The plot of The Hangover was inspired by a real event that happened to Tripp Vinson, a producer and friend of executive producer Chris Bender. Vinson had gone missing from his own Las Vegas bachelor party, blacking out and waking up in a strip club being threatened with a very, very large bill I was supposed to pay ",
+      "1h 39m", "/img/movies/hangover.jpg"));
 
   @GetMapping("/catalog")
   public String goToCatalog(Model model) { // Model es la forma como se va a enviar desde backend al html

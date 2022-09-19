@@ -27,10 +27,10 @@
   
   display: flex;
   flex-wrap: nowrap;
-  height: 150vh;
+  height: 180vh;
   height: -webkit-fill-available;
-  max-height: 150vh;
-  overflow-x: auto;
+  max-height: 180vh;
   overflow-y: hidden;
+  overflow: hidden;
   
 }
