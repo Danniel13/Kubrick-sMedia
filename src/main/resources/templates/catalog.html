@@ -134,7 +134,7 @@
               <div th:if="${!movies.isEmpty()}" th:each="movie: ${movies}" class="col">
                   <!-- Cada video -->
                   <div id="card" class="movie card shadow-sm shadow-sm border-0 ">
-                      <img th:src="${movie.imageUrl != null ? movie.imageUrl : '/images/noimage.jpg' }"
+                      <img th:src="${movie.imageUrl != null ? movie.imageUrl : '/img/noimage.jpg' }"
                           class="card-img-top" alt="${movie.name}">
                       <div class="card-body text-white-50 text-start">
                           <h5 th:text="${movie.name}" class="card-title">Card title</h5>
