@@ -34,7 +34,7 @@ private final List<MovieDto> movies = Arrays.asList(
             "2h 20m", "/img/movies/spid.jpeg"),
     new MovieDto(2, "Fast & Furious: Hobbs & Shaw", 1, "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.", "2h 15m", "/img/movies/fastfurious.jpg"),
     new MovieDto(3, "Top Gun: Maverick", 1, "Film directed by Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the second installment in the Top Gun film series. Written by Ehren Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is based on a story by Peter Craig and Justin Marks.", "2h 10m", "/img/movies/top.jpg"),
-    new MovieDto(4, "Dumb and Dumber", 1, "Esta pelicula trata de ..", "90", null),
+    new MovieDto(4, "Memory", 1, "Memory is a 2022 American action thriller film directed by Martin Campbell from a screenplay by Dario Scardapane. It is based on the novel De Zaak Alzheimer by Jef Geeraerts and is a remake of the novel's previous adaptation, the Belgian film The Alzheimer Case.", "1h 53m", "/img/movies/memory.jpg"),
     
  //Category 2:
 
