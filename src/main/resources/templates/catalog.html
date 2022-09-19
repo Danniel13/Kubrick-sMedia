@@ -109,38 +109,7 @@
       <span class="fs-4">Categories</span>
     </a>
     <hr>
-    <!-- <ul class="nav nav-pills flex-column mb-auto">
-      <li class="nav-item"> 
-        <a href="#" class="nav-link active" aria-current="page">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg>
-          Action
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#speedometer2"/></svg>
-          War
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg>
-          Comedy
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#grid"/></svg>
-          awarderds
-        </a>
-      </li>
-      <li>
-        <a href="#" class="nav-link text-white">
-          <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#people-circle"/></svg>
-          Classic
-        </a>
-      </li>
-    </ul> -->
+  
     <ul class="nav nav-pills flex-column mb-auto">
       <li th:each="cat: ${categories}" class="nav-item">
           <a th:href="@{/catalog/{id}(id=${cat.id})}"

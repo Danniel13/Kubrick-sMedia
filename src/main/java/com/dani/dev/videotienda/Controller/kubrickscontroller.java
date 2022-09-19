@@ -21,9 +21,10 @@ public class kubrickscontroller {
   //MODEL: SPRING MVC--REPRESENTA LOS DATOS QUE SE VAN A ENVIAR A LA VISTA PARA QUE SE MUESTRE LA INFORMACIÓN
   private final List<CategoryDto> categories = Arrays.asList(
     new CategoryDto("Action", 1),
-    new CategoryDto("Comedy", 2),
-    new CategoryDto("Romance", 3),
-    new CategoryDto("Sci-fi", 4));
+    new CategoryDto("Belic", 2),
+    new CategoryDto("Comedy", 3),
+    new CategoryDto("Awarderds", 4),
+    new CategoryDto("Classic", 5));
 
 private final List<MovieDto> movies = Arrays.asList(
     new MovieDto(1, "The Matrix", 4,
