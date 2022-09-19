@@ -12,6 +12,6 @@ public class MovieDto {
     private String name;
     private Integer categoryId;
     private String description;
-    private Integer length;
+    private String length;
     private String imageUrl;  
 }

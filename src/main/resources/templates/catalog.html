@@ -120,7 +120,7 @@
   </ul>
 </div>
 <div id="results">
-  <h1 th:text="${title}">Hola</h1>
+  <h1 th:text="${title}">Hola</h1 >
   <div class="d-flex flex-column flex-shrink-0 p-3 album ">
       <div class="container">
           <div th:if="${id == null}">
@@ -147,9 +147,10 @@
                               <button type="button" class="btn btn-sm btn-outline-secondary">Detail</button>
                               <button type="button"
                                   class="btn btn-sm btn-outline-secondary">Cart</button>
+                                  
                           </div>
-                          <small class="text-muted m-2">
-                              <span th:text="${movie.length}">120</span> mins
+                          <small class="text-muted me-0">
+                              <span th:text="${movie.length}">120</span> 
                           </small>
     <hr>
     
