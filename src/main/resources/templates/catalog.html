@@ -6,10 +6,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon1.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/template.css">
-  <link rel="stylesheet" href="css/catalog.css">
+  <link rel="shortcut icon" href="/img/favicon1.png" type="image/x-icon">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/template.css">
+  <link rel="stylesheet" href="/css/catalog.css">
     <title>Kubrick's Catalog</title>
 </head>
 
@@ -22,15 +22,15 @@
     <header class="mb-auto">
       <div>
         <h3 class="float-md-start mb-0">
-          <a href="/"> <img  src="img/favicon1.png"></a>
+          <a href="/"> <img  src="/img/favicon1.png"></a>
           Kubrick's Media
         </h3> 
         
         <nav class="nav nav-masthead justify-content-center float-md-end">
           <a class="nav-link fw-bold py-1 px-0 " href="/">Home</a>
-          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="catalog">Catalog</a>
-          <a class="nav-link fw-bold py-1 px-0" href="Contact">Contact</a>
-          <a class="nav-link fw-bold py-1 px-0" href="login">Login</a>
+          <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="/catalog">Catalog</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/Contact">Contact</a>
+          <a class="nav-link fw-bold py-1 px-0" href="/login">Login</a>
         </nav>
       </div>
     </header>
@@ -152,22 +152,22 @@
 </div>
 <div id="results">
   <h1 th:text="${title}">Hola</h1>
-  <div class="d-flex flex-column flex-shrink-0 p-3 album">
+  <div class="d-flex flex-column flex-shrink-0 p-3 album ">
       <div class="container">
           <div th:if="${id == null}">
               <p>Please select a category to see videos</p>
           </div>
           <div th:if="${id != null}"
-              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 rows-cols-lg-3 g-3">
+              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 rows-cols-lg-3 g-3 ">
               <div th:if="${movies.isEmpty()}">
                   <p>No videos in this category</p>
               </div>
               <div th:if="${!movies.isEmpty()}" th:each="movie: ${movies}" class="col">
                   <!-- Cada video -->
-                  <div class="movie card shadow-sm bg-white">
+                  <div id="card" class="movie card shadow-sm shadow-sm border-0 ">
                       <img th:src="${movie.imageUrl != null ? movie.imageUrl : '/images/noimage.jpg' }"
                           class="card-img-top" alt="${movie.name}">
-                      <div class="card-body text-dark">
+                      <div class="card-body text-white-50 text-start">
                           <h5 th:text="${movie.name}" class="card-title">Card title</h5>
                           <p th:text="${movie.description}" class="card-text">Some quick example text
                               to build on the card title and make up the bulk of the card's content.
@@ -190,7 +190,7 @@
 
 
             <!-- ALBUM BOX 4 -->
-            <div class="col">
+            <!-- <div class="col">
               <div class="card shadow-sm border-0 ">
                 <svg class="bd-placeholder-img card-img-top" width="100%" height="225"
                   xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail"
@@ -201,8 +201,7 @@
                 </svg>
 
                 <div class="card-body text-bg-dark ">
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                    additional content. This content is a little bit longer.</p>
+                  
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
                       <button type="button" class="btn btn-sm btn-outline-secondary">Detail</button>
@@ -212,7 +211,7 @@
                   </div>
                 </div>
               </div>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -230,6 +229,12 @@
 
 
     </main>
+    <div class="row justify-content-center mt-5">
+      <div class="col-lg-4 col-md-6 col-sm-6 color">
+  </div>
+  
+  </div>
+  
 
     <footer class="mt-auto text-white-50">
       <p>Developer by <a href= "mailto:danielgz.m@hotmail.com" class="text-white"> Danniel Dev</a>. 2022 </p>
