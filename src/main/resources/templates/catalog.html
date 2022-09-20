@@ -108,12 +108,12 @@
     </a>
     <hr>
   
-    <ul class="nav nav-pills flex-column mb-auto">
+    <ul class="nav nav-pills flex-column mb-auto ">
       <li th:each="cat: ${categories}" class="nav-item">
           <a th:href="@{/catalog/{id}(id=${cat.id})}"
         
               th:class="'nav-link '+${cat.id == id ? 'active' : ''}" aria-current="page" >
-              <span class="fs-4" th:text="${cat.name}">Action</span>
+              <span class="fs-4 text-white-50" th:text="${cat.name}">Action</span>
              
           </a>
          
@@ -127,15 +127,15 @@
   </div>
 </div>
 
-<div id="results" th:if="${error == null}">
+<div id="results" class="text-white-50" th:if="${error == null}">
   <h1 th:text="${title}">Hola</h1 >
   <div class="d-flex flex-column  flex-shrink-0 p-3 album ">
-      <div class="container  ">
+      <div class="container">
           <div class="fs-5  text-center text-white-50"  th:if="${id == null}">
               <p>Please select a category to see videos</p>
           </div>
           <div th:if="${id != null}"
-              class="row row-cols-1 row-cols-sm-2 row-cols-md-3 rows-cols-lg-3 g-3 ">
+              class=" row row-cols-1 row-cols-sm-2 row-cols-md-3 rows-cols-lg-3 g-3 ">
               <div th:if="${movies.isEmpty()}">
                   <p>No videos in this category</p>
               </div>
@@ -216,7 +216,7 @@
   
 
     <footer class="mt-auto text-white-50">
-      <p>Developer by <a href= "mailto:danielgz.m@hotmail.com" class="text-white"> Danniel Dev</a>. 2022 </p>
+      <p>Developer by <a href= "mailto:danielgz.m@hotmail.com" class="text-white-50"> Danniel Dev</a>. 2022 </p>
   
     </footer>
 
