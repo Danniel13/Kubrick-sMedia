@@ -21,3 +21,26 @@
   
 }
 
+
+#error{
+  width: 100%;
+  
+ 
+}
+#results{
+  width: 100%;
+  
+ 
+}
+
+#error2{
+  --bs-alert-bg: #212529; 
+  border: transparent;
+
+
+
+
+}
+
+
+

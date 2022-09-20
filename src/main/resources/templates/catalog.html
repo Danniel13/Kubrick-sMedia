@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  xmlns:th="https://www.thymeleaf.org/">  Para usar recursos de thymeleaf -->
-<html lang="en" xmlns:th="http://www.thymeleaf.org/"> 
+<html class="h-100" lang="en" xmlns:th="http://www.thymeleaf.org/"> 
 
 <head>
   <meta charset="UTF-8">
@@ -101,12 +101,10 @@
 
       <!-- ASIDE -SIDEBAR -->
       <div id="medbar">
-        <!-- <h1 class="visually-hidden">Sidebars examples</h1> -->
-
-  <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+      <div class="categories d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
     <a href="#results" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
       <svg class="bi pe-none me-2" width="40" height="32"><use xlink:href="#bootstrap"/></svg>
-      <span class="fs-2">Categories</span>
+      <span class="fs-2 text-white-50">Categories</span>
     </a>
     <hr>
   
@@ -122,11 +120,18 @@
       </li>
   </ul>
 </div>
-<div id="results">
+
+<div  class="fs-5  row-cols-md-1 " id="error" th:if="${error != null}" >
+  <div id="error2" th:text="${error}" class="alert alert-warning text-white-50" role="alert">
+      Error
+  </div>
+</div>
+
+<div id="results" th:if="${error == null}">
   <h1 th:text="${title}">Hola</h1 >
   <div class="d-flex flex-column  flex-shrink-0 p-3 album ">
       <div class="container  ">
-          <div class="fs-5  text-center"  th:if="${id == null}">
+          <div class="fs-5  text-center text-white-50"  th:if="${id == null}">
               <p>Please select a category to see videos</p>
           </div>
           <div th:if="${id != null}"

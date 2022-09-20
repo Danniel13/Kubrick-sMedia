@@ -27,7 +27,7 @@ public class kubrickscontroller {
 
     var categories = this.CatalogService.getCategories();
 
-    model.addAttribute("title", "Welcome to my site");
+    // model.addAttribute("title", "Welcome to my site");
     model.addAttribute("categories", categories);
 
     return "catalog";
@@ -35,7 +35,7 @@ public class kubrickscontroller {
 
 @GetMapping("/catalog/{id}")
 public String loadCatalogById(@PathVariable("id") Integer id, Model model) {
-    log.info("Cargando informacion de categoria {}", id);
+    log.info("Loading category Information {}", id);
 
     var categories = CatalogService.getCategories();
     model.addAttribute("categories", categories);
@@ -43,7 +43,7 @@ public String loadCatalogById(@PathVariable("id") Integer id, Model model) {
     var categoryOp = this.CatalogService.getCategoryById(id);
     if (categoryOp.isEmpty()) {
         // Mostrar mensaje de error
-        model.addAttribute("error", "La categoria no existe");
+        model.addAttribute("error", "The category does not exist.");
     } else {
         var category = categoryOp.get();
 
