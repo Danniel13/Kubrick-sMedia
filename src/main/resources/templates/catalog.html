@@ -51,7 +51,7 @@
             <svg class="bd-placeholder-img"  width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false" >
              
-              <rect x="100" y="50" width="200" height="100"  rx="30" ry="50"  />
+              <rect width="20%" height="20%" fill="#777" />
             </svg>
            
             <div class="container">
@@ -66,7 +66,7 @@
             <a href="#results"><img src="/img/movies/posterm2.jpeg"width="100%" height="100%" alt=""></a>
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-              <rect width="100%" height="100%" fill="#777" />
+              <rect width="20%" height="20%" fill="#777" />
             </svg>
 
             <div class="container">
@@ -114,7 +114,7 @@
       <li th:each="cat: ${categories}" class="nav-item">
           <a th:href="@{/catalog/{id}(id=${cat.id})}"
         
-              th:class="'nav-link '+${cat.id == id ? 'active' : ''}" aria-current="page">
+              th:class="'nav-link '+${cat.id == id ? 'active' : ''}" aria-current="page" >
               <span class="fs-4" th:text="${cat.name}">Action</span>
              
           </a>
