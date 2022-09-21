@@ -1,0 +1,21 @@
+remotemysql
+email: danielgz.m
+Pass: Pa55wrd
+
+
+Created!
+You have successfully created a new database. The details are below.
+
+Username: rysOmMd5MG
+
+Database name: rysOmMd5MG
+
+Password: 8jCExbQMcK
+
+Server: remotemysql.com
+
+Port: 3306
+
+These are the username and password to log in to your database and phpMyAdmin
+
+Make sure you keep your password secure. Ensure you keep back ups of your database in case it gets deleted.
