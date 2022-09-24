@@ -8,11 +8,10 @@ import com.dani.dev.videotienda.model.entity.Movie;
 
 public interface MovieRepository extends JpaRepository<Movie, Long> {
 
+    
     List<Movie> findAllByCategoryId(Long categoryId);
+}
 
-    List<Movie> findAllByCategoryIdIn(List<Long> categoryIds);
-
-    List<Movie> findAllByDescriptionLikeOrderByNameAsc(String description);
 
     // JPQL -> Selects a objetos JPA
     // @Query("SELECT m FROM Movie m WHERE m.category.id = :categoryId"
@@ -23,4 +22,4 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
     //         + " AND (m.username like :name OR m.name like :name)", nativeQuery = true)
     // List<Movie> findParticular(Long categoryId, String name);
 
-}
+
