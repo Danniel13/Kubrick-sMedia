@@ -6,8 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
 import com.dani.dev.videotienda.service.CatalogService;
-import lombok.extern.slf4j.Slf4j;
 
+import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+@AllArgsConstructor
 @Controller
 @Slf4j
 public class kubrickscontroller {
@@ -18,9 +20,7 @@ public class kubrickscontroller {
  
   private CatalogService CatalogService;
 
-  public kubrickscontroller(CatalogService CatalogService) {
-      this.CatalogService = CatalogService;
-  }
+ 
 
   @GetMapping("/catalog")
   public String goToCatalog(Model model) { // Model es la forma como se va a enviar desde backend al html

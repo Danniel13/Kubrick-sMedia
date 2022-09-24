@@ -9,6 +9,8 @@ import org.springframework.stereotype.Service;
 
 import com.dani.dev.videotienda.Controller.dto.CategoryDto;
 import com.dani.dev.videotienda.Controller.dto.MovieDto;
+import com.dani.dev.videotienda.model.repository.CategoryRepository;
+import com.dani.dev.videotienda.model.repository.MovieRepository;
 import com.dani.dev.videotienda.service.CatalogService;
 
 
@@ -16,12 +18,23 @@ import com.dani.dev.videotienda.service.CatalogService;
 @Service
 public class CatalogServiceImpl implements CatalogService {
 
+  private final CategoryRepository categoryRepository;
+  private final MovieRepository movieRepository;
+
+  //CONSTRUCTORES ATRIBUTOS
+  public CatalogServiceImpl(CategoryRepository categoryRepository, MovieRepository movieRepository) {
+    this.categoryRepository = categoryRepository;
+    this.movieRepository = movieRepository;
+  }
+  
     // S.O.L.I.D
     // SRP
     // OCP
     // LSP
     // ISP
     // DIP
+
+    
 
     private final List<CategoryDto> categories = Arrays.asList(
       new CategoryDto("Action", 1),
