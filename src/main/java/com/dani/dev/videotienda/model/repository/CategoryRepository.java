@@ -8,6 +8,6 @@ import com.dani.dev.videotienda.model.entity.Category;
 
 public interface CategoryRepository extends JpaRepository<Category, Long> {
 
-    Optional<Category> findByName(String string);
+    Optional<Category> findByName(String string); //LISTAR TODAS LAS CATEGORIAS
     
 }
