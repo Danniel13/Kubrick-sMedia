@@ -1,6 +1,5 @@
 package com.dani.dev.videotienda.model.entity;
 
-import javax.persistence.Entity;
 import javax.persistence.Entity; //Libreria para poder usar JPA----CONEXION BD---GUARDAR ENTIDAD
 import lombok.Data;
 
