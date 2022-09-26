@@ -11,7 +11,7 @@ import com.dani.dev.videotienda.model.entity.Movie;
 import com.dani.dev.videotienda.model.repository.CategoryRepository;
 import com.dani.dev.videotienda.model.repository.MovieRepository;
 
-import ch.qos.logback.core.joran.action.Action;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 // Clase que va a permitir ejecutar proyecto, agregar configs iniciales del proyecto
