@@ -56,22 +56,19 @@ public class VideotiendaApplication {
         new Movie(001, "Spider-Man: No Way Home",
         "Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.",
         "2h 20m",
-        "/img/movies/spid.jpeg",
-        Action),
+        "/img/movies/spid.jpeg", Action),
         new Movie(002, "Fast & Furious: Hobbs & Shaw",
         "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
-        "2h 20m",
-        "https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155659-tv-news-feature-what-is-the-best-order-to-watch-the-matrix-movies-image6-n4msmyjaxw.jpg",
-        Action)
-
+        "2h 15m", "/img/movies/fastfurious.jpg", Action),
+        new Movie(003, "Fast & Furious: Hobbs & Shaw",
+        "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
+        "2h 15m", "/img/movies/fastfurious.jpg", Action),
 
 
     );
  
 
-      // new Movie(2, "Fast & Furious: Hobbs & Shaw", 1,
-      //     "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
-      //     "2h 15m", "/img/movies/fastfurious.jpg"),
+   
       // new Movie(3, "Top Gun: Maverick", 1,
       //     "Film directed by Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the second installment in the Top Gun film series. Written by Ehren Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is based on a story by Peter Craig and Justin Marks.",
       //     "2h 10m", "/img/movies/top.jpg"),
