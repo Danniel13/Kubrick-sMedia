@@ -38,7 +38,7 @@ public class VideotiendaApplication {
 		private void loadData() {
 			var Action = categoryRepository.save(new Category("Action"));
 			var Belic = categoryRepository.save(new Category("Belic"));
-      var Comedy = categoryRepository.save(new Category("Comedyi"));
+      var Comedy = categoryRepository.save(new Category("Comedy"));
 			var Awarderds = categoryRepository.save(new Category("Awarderds"));
       var Classic = categoryRepository.save(new Category("Classic"));
 
@@ -55,46 +55,45 @@ public class VideotiendaApplication {
         // Categoría 1
         new Movie(001, "Spider-Man: No Way Home",
         "Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.",
-        "2h 20m",
-        "/img/movies/spid.jpeg", Action),
+        "2h 20m","/img/movies/spid.jpeg", Action),
         new Movie(002, "Fast & Furious: Hobbs & Shaw",
         "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
         "2h 15m", "/img/movies/fastfurious.jpg", Action),
-        new Movie(003, "Fast & Furious: Hobbs & Shaw",
-        "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
-        "2h 15m", "/img/movies/fastfurious.jpg", Action),
+        new Movie(003, "Top Gun: Maverick",
+        "Film directed by Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the second installment in the Top Gun film series. Written by Ehren Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is based on a story by Peter Craig and Justin Marks.",
+        "2h 10m", "/img/movies/top.jpg", Action),
+        new Movie(004, "Memory",
+        "Memory is a 2022 American action thriller film directed by Martin Campbell from a screenplay by Dario Scardapane. It is based on the novel De Zaak Alzheimer by Jef Geeraerts and is a remake of the novel's previous adaptation, the Belgian film The Alzheimer Case.",
+        "1h 53m", "/img/movies/memory.jpg", Action),
 
 
-    );
+         // Category 2:
+         new Movie(005, "Greyhound",
+        "Greyhound is a 2020 American war film directed by Aaron Schneider and starring Tom Hanks, who also wrote the screenplay. The film is based on the 1955 novel The Good Shepherd by C. S. Forester, and also stars Stephen Graham, Rob Morgan, and Elisabeth Shue.",
+        "1h 31m", "/img/movies/greyhound.jpg", Belic),
+        new Movie(006, "Operation Mincemeat",
+        "Operation Mincemeat is a 2021 British war drama film directed by John Madden. It is based upon Ben Macintyre's book on the British Operation Mincemeat during the Second World War. The film stars Colin Firth, Kelly Macdonald, Matthew Macfadyen, Penelope Wilton, Johnny Flynn and Jason Isaacs.",
+        "2h 7m", "/img/movies/mincemeat.jpg", Belic),
+        new Movie(007, "Dunkirk",
+        "Dunkirk is a 2017 war film written, directed, and produced by Christopher Nolan that depicts the Dunkirk evacuation of World War II through the perspectives of the land, sea, and air. During World War II, soldiers from the British Empire, Belgium and France try to evacuate from the town of Dunkirk.",
+        "2h 17m", "/img/movies/dunkir.jpg", Belic),
+   
  
 
-   
-      // new Movie(3, "Top Gun: Maverick", 1,
-      //     "Film directed by Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the second installment in the Top Gun film series. Written by Ehren Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is based on a story by Peter Craig and Justin Marks.",
-      //     "2h 10m", "/img/movies/top.jpg"),
-      // new Movie(4, "Memory", 1,
-      //     "Memory is a 2022 American action thriller film directed by Martin Campbell from a screenplay by Dario Scardapane. It is based on the novel De Zaak Alzheimer by Jef Geeraerts and is a remake of the novel's previous adaptation, the Belgian film The Alzheimer Case.",
-      //     "1h 53m", "/img/movies/memory.jpg"),
-
-//       // Category 2:
-
-//       new MovieDto(5, "Greyhound", 2,
-//           "Greyhound is a 2020 American war film directed by Aaron Schneider and starring Tom Hanks, who also wrote the screenplay. The film is based on the 1955 novel The Good Shepherd by C. S. Forester, and also stars Stephen Graham, Rob Morgan, and Elisabeth Shue.",
-//           "1h 31m", "/img/movies/greyhound.jpg"),
-
-//       new MovieDto(6, "Operation Mincemeat", 2,
-//           "Operation Mincemeat is a 2021 British war drama film directed by John Madden. It is based upon Ben Macintyre's book on the British Operation Mincemeat during the Second World War. The film stars Colin Firth, Kelly Macdonald, Matthew Macfadyen, Penelope Wilton, Johnny Flynn and Jason Isaacs.",
-//           "2h 7m", "/img/movies/mincemeat.jpg"),
-
-//       new MovieDto(7, "Dunkirk", 2,
-//           "Dunkirk is a 2017 war film written, directed, and produced by Christopher Nolan that depicts the Dunkirk evacuation of World War II through the perspectives of the land, sea, and air. During World War II, soldiers from the British Empire, Belgium and France try to evacuate from the town of Dunkirk.",
-//           "2h 17m", "/img/movies/dunkir.jpg"),
-
 //       // Category 3:
+        new Movie(010, "Dog",
+        "Dog is a 2022 American comedy drama road film directed by Channing Tatum and Reid Carolin, both making their respective film directorial debuts, based on a story by Carolin and Brett Rodriguez. The film stars Tatum as an Army Ranger who is tasked with escorting the military dog of his fallen friend to his funeral.",
+        "1h 37m", "/img/movies/dunkir.jpg", Comedy),
+        new Movie(011, "The Addams Family",
+        "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
+        "2h 17m", "/img/movies/adams.jpg", Comedy),
+        
+//      
 
-//       new MovieDto(8, "Dog", 3,
-//           "Dog is a 2022 American comedy drama road film directed by Channing Tatum and Reid Carolin, both making their respective film directorial debuts, based on a story by Carolin and Brett Rodriguez. The film stars Tatum as an Army Ranger who is tasked with escorting the military dog of his fallen friend to his funeral.",
-//           "1h 37m", "/img/movies/dog.jpg"),
+);
+
+
+//      
 //       new MovieDto(9, "The Addams Family", 3,
 //       "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
 //       "1h 39m", "/img/movies/adams.jpg"),
