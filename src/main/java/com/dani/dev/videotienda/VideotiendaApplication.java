@@ -86,59 +86,31 @@ public class VideotiendaApplication {
         "1h 37m", "/img/movies/dunkir.jpg", Comedy),
         new Movie(011, "The Addams Family",
         "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
-        "2h 17m", "/img/movies/adams.jpg", Comedy),
-        
-//      
-
-);
-
-
-//      
-//       new MovieDto(9, "The Addams Family", 3,
-//       "The Addams Family is a fictional family created by American cartoonist Charles Addams. They originally appeared in a series of 150 unrelated single-panel cartoons, about half of which were originally published in The New Yorker over a 50-year period from their inception in 1938. This movie is an adaptation to Adams.",
-//       "1h 39m", "/img/movies/adams.jpg"),
-//       new MovieDto(10, "The Hangover 1", 3,
-//       "The plot of The Hangover was inspired by a real event that happened to Tripp Vinson, a producer and friend of executive producer Chris Bender. Vinson had gone missing from his own Las Vegas bachelor party, blacking out and waking up in a strip club being threatened with a very, very large bill I was supposed to pay ",
-//       "1h 49m", "/img/movies/hangover.jpg"),
-
-//       new MovieDto(11, "Superbad", 3,
-//       "perbad is a 2007 American coming-of-age teen buddy comedy film directed by Greg Mottola and produced by Judd Apatow. The film stars Jonah Hill and Michael Cera as Seth and Evan, two teenagers about to graduate from high school. ",
-//       "1h 52m", "/img/movies/superband.jpg"),
-      
+        "1h 39m", "/img/movies/adams.jpg", Comedy),
+        new Movie(012, "The Hangover 1",
+        "The plot of The Hangover was inspired by a real event that happened to Tripp Vinson, a producer and friend of executive producer Chris Bender. Vinson had gone missing from his own Las Vegas bachelor party, blacking out and waking up in a strip club being threatened with a very, very large bill I was supposed to pay ",
+        "1h 49m", "/img/movies/hangover.jpg", Comedy),
 
 //       // Category 4:
-//       new MovieDto(12, "Parasite", 4,
-//       "The struggling Kim family sees an opportunity when the son starts working for the wealthy Park family. Soon, all of them find a way to work within the same household and start living a parasitic life.",
-//       "2h 16m", "/img/movies/parasite.jpg"),
-//       new MovieDto(13, "The Shape Of Water", 4,
-//       "Elisa, a lonely janitor, stumbles upon an amphibious creature that is held captive in a secret research facility. She then develops a unique relationship with the creature.",
-//       "2h 03m", "/img/movies/sw.jpg"),
+        new Movie(013, "Parasite",
+        "The struggling Kim family sees an opportunity when the son starts working for the wealthy Park family. Soon, all of them find a way to work within the same household and start living a parasitic life. ",
+        "2h 16m", "/img/movies/parasite.jpg", Awarderds),
+        new Movie(014, "The Shape Of Water",
+        "Elisa, a lonely janitor, stumbles upon an amphibious creature that is held captive in a secret research facility. She then develops a unique relationship with the creature. ",
+        "2h 03m", "/img/movies/sw.jpg", Awarderds),
 
 
 
-//       new MovieDto(14, "A Clockwork Orange", 5,
-//       "A Clockwork Orange is a 1971 dystopian crime film  directed by Stanley Kubrick. Alex, a psychopathic delinquent, is imprisoned for murder and rape. In order to reduce his sentence, he volunteers for an experimental therapy conducted by the government.",
-//       "1h 52m", "/img/movies/orange.jpg"),
-//       new MovieDto(15, "Trainspotting", 5,
-//       "Trainspotting is a 1996 Scottish black comedy-drama film directed by Danny Boyle. Renton is a drug addict who tries to mend his ways by moving to London and starting life afresh. He, however, is pulled back into the world of addiction by his friends.",
-//       "1h 34m", "/img/movies/trains.jpg")
+         // Category 5:
 
+         new Movie(015, "A Clockwork Orange",
+         "A Clockwork Orange is a 1971 dystopian crime film  directed by Stanley Kubrick. Alex, a psychopathic delinquent, is imprisoned for murder and rape. In order to reduce his sentence, he volunteers for an experimental therapy conducted by the government.",
+         "1h 52m", "/img/movies/orange.jpg", Classic),
+         new Movie(015, "Trainspotting",
+         "A Clockwork Orange is a 1971 dystopian crime film  directed by Stanley Kubrick. Alex, a psychopathic delinquent, is imprisoned for murder and rape. In order to reduce his sentence, he volunteers for an experimental therapy conducted by the government.",
+         "1h 34m", "/img/movies/trains.jpg", Classic));
 
-
-
-
-					// new Movie(10001L, "The Matrix",
-					// 		"Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
-					// 		120,
-					// 		"https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155659-tv-news-feature-what-is-the-best-order-to-watch-the-matrix-movies-image6-n4msmyjaxw.jpg",
-					// 		scifi),
-					// new Movie(10002L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
-					// new Movie(10003L, "Dumb and Dumber",
-					// 		"Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
-					// 		90, null, comedy),
-					// new Movie(10004L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
-					// new Movie(10005L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
-					// new Movie(10006L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy));
+//    
 
           movieRepository.saveAll(movies);
 		}
