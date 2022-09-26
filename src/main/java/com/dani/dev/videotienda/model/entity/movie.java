@@ -15,7 +15,7 @@ import lombok.NoArgsConstructor;
 public class Movie {
 
     @Id
-    private Long code;
+    private Integer code;
     
     private String name;
     private String description;

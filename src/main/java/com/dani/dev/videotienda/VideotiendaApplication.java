@@ -11,6 +11,7 @@ import com.dani.dev.videotienda.model.entity.Movie;
 import com.dani.dev.videotienda.model.repository.CategoryRepository;
 import com.dani.dev.videotienda.model.repository.MovieRepository;
 
+import ch.qos.logback.core.joran.action.Action;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 // Clase que va a permitir ejecutar proyecto, agregar configs iniciales del proyecto
@@ -51,12 +52,22 @@ public class VideotiendaApplication {
 			categoryRepository.saveAll(categories);
 
 			var movies = Arrays.asList(
-					// new Movie(code, name, description, length, imageUrl, category),
-      // Category 1:
-      new Movie(1, "Spider-Man: No Way Home", "Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.",
-          "2h 20m", null, Action )
+        // Categoría 1
+        new Movie(001, "Spider-Man: No Way Home",
+        "Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.",
+        "2h 20m",
+        "/img/movies/spid.jpeg",
+        Action),
+        new Movie(002, "Fast & Furious: Hobbs & Shaw",
+        "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
+        "2h 20m",
+        "https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155659-tv-news-feature-what-is-the-best-order-to-watch-the-matrix-movies-image6-n4msmyjaxw.jpg",
+        Action)
 
-      );
+
+
+    );
+ 
 
       // new Movie(2, "Fast & Furious: Hobbs & Shaw", 1,
       //     "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
@@ -120,20 +131,20 @@ public class VideotiendaApplication {
 
 
 
-					new Movie(10001L, "The Matrix",
-							"Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
-							120,
-							"https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155659-tv-news-feature-what-is-the-best-order-to-watch-the-matrix-movies-image6-n4msmyjaxw.jpg",
-							scifi),
-					new Movie(10002L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
-					new Movie(10003L, "Dumb and Dumber",
-							"Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
-							90, null, comedy),
-					new Movie(10004L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
-					new Movie(10005L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
-					new Movie(10006L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy));
+					// new Movie(10001L, "The Matrix",
+					// 		"Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
+					// 		120,
+					// 		"https://cdn.pocket-lint.com/r/s/1200x630/assets/images/155659-tv-news-feature-what-is-the-best-order-to-watch-the-matrix-movies-image6-n4msmyjaxw.jpg",
+					// 		scifi),
+					// new Movie(10002L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
+					// new Movie(10003L, "Dumb and Dumber",
+					// 		"Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
+					// 		90, null, comedy),
+					// new Movie(10004L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
+					// new Movie(10005L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy),
+					// new Movie(10006L, "Dumb and Dumber", "Esta pelicula trata de ..", 90, null, comedy));
 
-			movieRepository.saveAll(movies);
+          movieRepository.saveAll(movies);
 		}
 
 	}
