@@ -50,32 +50,30 @@ public class VideotiendaApplication {
 			var movies = Arrays.asList(
         // Categoría 1
         new Movie(10001L, "Spider-Man: No Way Home",
-        "Cuando una bella desconocida lleva al hacker Neo a un inframundo prohibido, descubre la impactante verdad: la vida que conoce es un elaborado engaño de una ciberinteligencia malvada.",
+        "Spider-Man seeks the help of Doctor Strange to forget his exposed secret identity as Peter Parker. However, Strange's spell goes horribly wrong, leading to unwanted guests entering their universe.",
         120,
         "/img/movies/spid.jpeg",
-        Action));
+        Action),
 
         
-        // new Movie(10001L, "Spider-Man: No Way Home",
-        // "a",
-        // 140,"/img/movies/spid.jpeg", Action),
+        new Movie(10002L, "Fast & Furious: Hobbs & Shaw",
+        "US agent Luke Hobbs and British mercenary Deckard Shaw are forced to put their rivalry side and work together to stop a genetically enhanced supervillain that after to manu time is an insencible person.",
+        140,"/img/movies/fastfurious.jpg", Action),
 
+      
+        new Movie(10003L, "Top Gun: Maverick",
+        "Film directed by Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the second installment in the Top Gun film series. Written by Ehren Kruger, Eric Warren Singer, and Christopher McQuarrie.",
+        130, "/img/movies/top.jpg", Action),
 
-        // new Movie(10002L, "Fast & Furious: Hobbs & Shaw",
-        // "e",
-        // 135, "/img/movies/fastfurious.jpg", Action),
-        // new Movie(003, "Top Gun: Maverick",
-        // "Film directed by Joseph Kosinski. It is the sequel to the 1986 film Top Gun and the second installment in the Top Gun film series. Written by Ehren Kruger, Eric Warren Singer, and Christopher McQuarrie, the film is based on a story by Peter Craig and Justin Marks.",
-        // "2h 10m", "/img/movies/top.jpg", Action),
-        // new Movie(004, "Memory",
-        // "Memory is a 2022 American action thriller film directed by Martin Campbell from a screenplay by Dario Scardapane. It is based on the novel De Zaak Alzheimer by Jef Geeraerts and is a remake of the novel's previous adaptation, the Belgian film The Alzheimer Case.",
-        // "1h 53m", "/img/movies/memory.jpg", Action),
+        new Movie(10004L, "Memory",
+        "Memory is a 2022 American action thriller film directed by Martin Campbell from a screenplay by Dario Scardapane. It is based on the novel De Zaak Alzheimer by Jef Geeraerts and is a remake of the novel's previous adaptation, the Belgian film The Alzheimer Case.",
+        113, "/img/movies/memory.jpg", Action),
 
 
          // Category 2:
-        //  new Movie(10003L, "Greyhound",
-        // "Greyhound is a 2020 American war film directed by Aaron Schneider and starring Tom Hanks, who also wrote the screenplay. The film is based on the 1955 novel The Good Shepherd by C. S. Forester, and also stars Stephen Graham, Rob Morgan, and Elisabeth Shue.",
-        // 91, "/img/movies/greyhound.jpg", Belic));
+         new Movie(10003L, "Greyhound",
+        "Greyhound is a 2020 American war film directed by Aaron Schneider and starring Tom Hanks, who also wrote the screenplay. The film is based on the 1955 novel The Good Shepherd by C. S. Forester, and also stars Stephen Graham, Rob Morgan, and Elisabeth Shue.",
+        91, "/img/movies/greyhound.jpg", Belic));
         // new Movie(006, "Operation Mincemeat",
         // "Operation Mincemeat is a 2021 British war drama film directed by John Madden. It is based upon Ben Macintyre's book on the British Operation Mincemeat during the Second World War. The film stars Colin Firth, Kelly Macdonald, Matthew Macfadyen, Penelope Wilton, Johnny Flynn and Jason Isaacs.",
         // "2h 7m", "/img/movies/mincemeat.jpg", Belic),
