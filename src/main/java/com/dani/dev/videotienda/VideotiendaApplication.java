@@ -5,6 +5,7 @@ import java.util.Arrays;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.stereotype.Component;
 
 import com.dani.dev.videotienda.model.entity.Category;
 import com.dani.dev.videotienda.model.entity.Movie;
@@ -21,7 +22,7 @@ public class VideotiendaApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(VideotiendaApplication.class, args);
 	}
-
+  @Component
 	@Data
 	@AllArgsConstructor
 	public static class DataLoader implements CommandLineRunner {
