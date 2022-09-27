@@ -1,5 +1,8 @@
 package com.dani.dev.videotienda.model.entity;
 
+
+import javax.persistence.Column;
+// JPA
 import javax.persistence.Entity; 
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
@@ -15,11 +18,12 @@ import lombok.NoArgsConstructor;
 public class Movie {
 
     @Id
-    private Integer code;
+    private Long code;
     
     private String name;
+    @Column(name = "description",  length = 500)
     private String description;
-    private String length;
+    private Integer length;
     private String imageUrl;
 
     @ManyToOne

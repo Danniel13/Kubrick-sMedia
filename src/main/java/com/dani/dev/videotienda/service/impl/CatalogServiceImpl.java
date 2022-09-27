@@ -27,7 +27,6 @@ public class CatalogServiceImpl implements CatalogService {
 
   private final CategoryRepository categoryRepository;
   private final MovieRepository movieRepository;
-
   //CONSTRUCTORES ATRIBUTOS
 
   
@@ -80,7 +79,7 @@ public class CatalogServiceImpl implements CatalogService {
 
 }
 
-    
+
 
 //     private final List<CategoryDto> categories = Arrays.asList(
 

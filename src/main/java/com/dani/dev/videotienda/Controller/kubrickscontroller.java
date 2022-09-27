@@ -13,10 +13,7 @@ import lombok.extern.slf4j.Slf4j;
 @Controller
 @Slf4j
 public class kubrickscontroller {
-  // GET MAPPING CON LA FUNCION GO CATALOG: REALIZA TODO EL AJUSTE DE LA
-  // REDIRECCION DE FORMS EN LA PAGINA
-  // MODEL: SPRING MVC--REPRESENTA LOS DATOS QUE SE VAN A ENVIAR A LA VISTA PARA
-  // QUE SE MUESTRE LA INFORMACIÓN
+
  
   private CatalogService CatalogService;
 
@@ -57,13 +54,6 @@ public String loadCatalogById(@PathVariable("id") Integer id, Model model) {
 
     return "catalog";
 }
-
-
-
-
-
-
-
 
 
   @GetMapping("/Contact")
